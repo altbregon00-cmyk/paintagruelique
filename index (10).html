@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Paintagruélique — Boulangerie artisanale &amp; pâtisserie à Reims | Artisan bakery</title>
+<meta name="description" content="Boulangerie artisanale à Reims : pain au levain, croissants, viennoiseries, tartes, sandwichs. Artisan bakery in Reims: sourdough bread, pastries, tarts, babka.">
+<meta name="keywords" content="boulangerie, boulangerie Reims, pâtisserie, pain, pain au levain, baguette, croissant, pain au chocolat, tarte, babka, focaccia, saint-honoré, sandwich poulet, pain de campagne, bakery, bakery Reims, pastries, french pastries, bread bakery, sourdough bakery, sourdough bread, real bread, country bread, danish bread, pastry shop, bread store, bakery store, cake shop, sweet treats, salty treats">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fraunces:ital,wght@0,600;0,800;1,600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--brand:#9FBE9A;--ink:#20221F;--bg:#F3EFE5;--gold:#C9A76A;--brown:#8A5C3B;--line:rgba(32,34,31,.2);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#F3EFE5;--bg:#20221F;--line:rgba(243,239,229,.25);--brown:#C9A76A}}
+:root[data-theme="dark"]{--ink:#F3EFE5;--bg:#20221F;--line:rgba(243,239,229,.25);--brown:#C9A76A}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Poppins,system-ui,sans-serif;line-height:1.7;padding-bottom:calc(64px + env(safe-area-inset-bottom,0px))}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:800;line-height:1.1;margin:0}
+a{color:inherit}
+.hand{font-family:Caveat,cursive;font-weight:600;color:var(--brown);font-size:1.4rem;line-height:1.1}
+.wrap{max-width:980px;margin:0 auto;padding:0 22px}
+header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:9;border-bottom:1px solid var(--line)}
+nav{max-width:980px;margin:auto;padding:14px 22px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-family:Fraunces,serif;font-weight:800;font-size:1.25rem;text-decoration:none;display:flex;align-items:center;gap:12px}
+.logo .mark{height:72px;width:auto;display:block}
+@media(max-width:600px){.logo .mark{height:52px}.logo{font-size:1.05rem}}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-size:.9rem}
+nav ul a{text-decoration:none;border-bottom:1px solid transparent}
+nav ul a:hover{border-color:var(--brown)}
+@media(max-width:600px){nav ul li:nth-child(n+3){display:none}}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:64px 0 56px}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:36px}}
+.hero h1{font-size:clamp(2.5rem,7vw,4.2rem);margin:6px 0 18px}
+.hero p{max-width:460px;margin:0 0 22px}
+.btn{display:inline-block;background:var(--brand);color:#20221F;padding:12px 24px;border-radius:6px;font-weight:600;text-decoration:none;margin-right:18px}
+.link{text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:5px;text-decoration-thickness:2px;font-weight:500}
+.photo{background:var(--brand);color:#20221F;display:flex;align-items:flex-end;min-height:340px;padding:14px;border-radius:4px;transform:rotate(1.5deg);overflow:hidden;position:relative}
+.photo.flat{transform:rotate(-1deg);min-height:300px}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.photo span{font-family:Caveat,cursive;font-size:1.3rem;font-weight:600;position:relative}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(1.9rem,5vw,2.8rem);margin-bottom:6px}
+.sub{max-width:520px;margin:0 0 30px}
+.menu{columns:2 320px;column-gap:56px}
+.menu section{padding:0;border:0;break-inside:avoid;margin-bottom:30px}
+.menu h3{font-size:1.35rem;border-bottom:2px solid var(--ink);padding-bottom:4px;margin-bottom:6px}
+.menu p{display:flex;align-items:baseline;gap:8px;margin:0;padding:7px 0;font-size:.95rem}
+.menu p i{flex:1;border-bottom:1px dotted var(--line)}
+.menu p em{font-style:normal;font-weight:600}
+.menu .hand{font-size:1.15rem;margin:-4px 0 4px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+@media(max-width:760px){.two{grid-template-columns:1fr;gap:28px}}
+.two p{margin:0 0 14px}
+.sign{font-size:2rem;margin-top:6px}
+.pro ul{list-style:none;padding:0;margin:0 0 22px}
+.pro li{padding:8px 0 8px 22px;position:relative}
+.pro li:before{content:"–";position:absolute;left:0;color:var(--brown);font-weight:700}
+table{width:100%;border-collapse:collapse;font-size:.95rem}
+td{padding:8px 0;border-bottom:1px solid var(--line)}td:last-child{text-align:right}
+footer{padding:30px 0;font-size:.85rem;opacity:.75;text-align:center}
+.bar{position:fixed;left:0;right:0;bottom:0;display:flex;background:var(--bg);border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px);z-index:10}
+.bar a{flex:1;text-align:center;padding:16px 6px;font-weight:600;font-size:.9rem;text-decoration:none}
+.bar a+a{border-left:1px solid var(--line)}
+@media(min-width:900px){.bar{display:none}body{padding-bottom:0}}
+#lang{font:600 .8rem Poppins,sans-serif;background:transparent;color:var(--ink);border:1.5px solid var(--ink);border-radius:6px;padding:5px 11px;cursor:pointer}
+#lang:hover{background:var(--brand)}
+nav{gap:14px}
+.duo{position:relative;min-height:400px}
+.duo img{position:absolute;object-fit:cover;border-radius:4px;background:var(--brand);box-shadow:0 6px 18px rgba(0,0,0,.18)}
+.duo .d1{top:0;right:0;width:78%;height:300px;transform:rotate(1.5deg)}
+.duo .d2{bottom:0;left:0;width:56%;height:210px;transform:rotate(-2.5deg);border:6px solid var(--bg)}
+@media(max-width:760px){.duo{min-height:360px}.duo .d1{height:250px}.duo .d2{height:180px}}
+.vid video{display:block;width:100%;height:420px;object-fit:cover;border-radius:4px;transform:rotate(1.5deg);box-shadow:0 6px 18px rgba(0,0,0,.18);background:var(--brand)}
+.own{position:relative;padding-bottom:110px}
+.own .o1{display:block;width:92%;height:auto;margin-left:auto;border-radius:4px;transform:rotate(1.5deg);box-shadow:0 6px 18px rgba(0,0,0,.18)}
+.own .o2{position:absolute;bottom:0;left:0;width:48%;height:190px;object-fit:cover;border-radius:4px;border:6px solid var(--bg);transform:rotate(-2.5deg);box-shadow:0 6px 18px rgba(0,0,0,.18)}
+@media(max-width:760px){.vid video{height:300px}.own{padding-bottom:90px}.own .o1{width:100%}.own .o2{width:52%;height:150px}}
+.cat{margin-bottom:38px}
+.cat h3{font-size:1.5rem;border-bottom:2px solid var(--ink);padding-bottom:4px;margin-bottom:16px}
+.items{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:20px}
+.items figure{margin:0}
+.items img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:4px;background:var(--brand);box-shadow:0 4px 14px rgba(0,0,0,.15)}
+.items figcaption{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:1.05rem;margin-top:8px}
+@media(max-width:480px){.items{grid-template-columns:repeat(2,1fr);gap:14px}}
+.pant{display:block;width:100%;max-width:380px;max-height:380px;object-fit:contain;margin-top:18px}
+@media(max-width:760px){.pant{max-width:260px;max-height:260px}}
+.more{font-size:1.9rem;text-align:center;margin:10px 0 0}
+.seo{font-size:.85rem;opacity:.75;max-width:760px;margin:0 auto;padding:30px 0 0;text-align:center}
+.showvid{max-width:520px;margin:26px auto 0}
+.showvid video,.vid video{pointer-events:none}
+.showvid video{display:block;width:100%;height:auto;aspect-ratio:2.2/1;object-fit:cover;object-position:top;border-radius:4px;box-shadow:0 6px 18px rgba(0,0,0,.18);background:var(--brand)}
+.map{display:block;width:100%;height:280px;border:0;border-radius:4px;margin-top:18px;box-shadow:0 6px 18px rgba(0,0,0,.15)}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Bakery", "name": "Paintagruélique — Boulangerie épicurienne", "description": "Boulangerie artisanale et pâtisserie à Reims. Artisan bakery and pastry shop in Reims.", "telephone": "+33326476881", "address": {"@type": "PostalAddress", "streetAddress": "30 Rue de Tambour", "postalCode": "51100", "addressLocality": "Reims", "addressCountry": "FR"}, "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Wednesday", "Thursday", "Friday", "Saturday"], "opens": "06:30", "closes": "19:30"}, {"@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "06:30", "closes": "13:30"}], "sameAs": ["https://www.instagram.com/boulangeriepaintagruelique/", "https://www.facebook.com/p/Paintagru%C3%A9lique-Boulangerie-%C3%A9picurienne-61552824359860/"], "keywords": "boulangerie, pâtisserie, pain au levain, croissant, baguette, tarte, bakery, sourdough bread, pastries"}</script>
+</head>
+<body>
+<header><nav>
+<a class="logo" href="#top"><img class="mark" src="logo.png" alt="" onerror="this.style.display='none'">Paintagruélique</a>
+<ul><li><a href="#carte">La carte</a></li><li><a href="#histoire">Qui on est</a></li><li><a href="#pro">Pros</a></li><li><a href="#infos">Nous trouver</a></li></ul>
+<button id="lang" type="button" aria-label="Changer de langue / Change language">EN</button>
+</nav></header>
+
+<main id="top">
+<div class="wrap hero">
+<div>
+<div class="hand">Reims · 30 rue de Tambour</div>
+<h1>Ici, tout est fait maison.</h1>
+<p>Du pain au levain, des viennoiseries et des douceurs, au fil des saisons. On aime tester des associations de saveurs qu'on ne trouve pas partout, et on le fait avec envie.</p>
+<a class="btn" href="#carte">Voir la carte</a><a class="link" href="#infos">Nous trouver</a>
+</div>
+<!-- Pour mettre une vraie photo : remplacer le <span> par <img src="nom-photo.jpg" alt="description"> -->
+<div class="vid">
+<video src="video.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Paintagruélique, pain et farine"></video>
+</div>
+</div>
+
+<section id="carte"><div class="wrap">
+<h2>La carte</h2>
+<p class="sub">Elle change selon les saisons et les envies. Pour les nouveautés du moment, le plus simple est de passer nous voir, ou de jeter un œil à notre Instagram.</p>
+<div class="cat"><h3>Pains</h3><div class="items">
+<figure><img src="baguette.jpg" alt="Baguette — boulangerie artisanale Reims" loading="lazy"><figcaption>Baguette</figcaption></figure>
+<figure><img src="painauxfruits.png" alt="Pain aux fruits — boulangerie artisanale Reims" loading="lazy"><figcaption>Pain aux fruits</figcaption></figure>
+<figure><img src="focaccia.jpg" alt="Focaccia — boulangerie artisanale Reims" loading="lazy"><figcaption>Focaccia</figcaption></figure>
+<figure><img src="painbaltik.png" alt="Pain baltique — boulangerie artisanale Reims" loading="lazy"><figcaption>Pain baltique</figcaption></figure>
+<figure><img src="painpaysan.png" alt="Pain paysan — boulangerie artisanale Reims" loading="lazy"><figcaption>Pain paysan</figcaption></figure>
+</div></div>
+<div class="cat"><h3>Viennoiseries</h3><div class="items">
+<figure><img src="croissants.png" alt="Croissants — boulangerie artisanale Reims" loading="lazy"><figcaption>Croissant</figcaption></figure>
+<figure><img src="painsauchocolat.png" alt="Pains au chocolat — boulangerie artisanale Reims" loading="lazy"><figcaption>Pain au chocolat</figcaption></figure>
+<figure><img src="painsuisse.png" alt="Pain suisse — boulangerie artisanale Reims" loading="lazy"><figcaption>Pain suisse</figcaption></figure>
+<figure><img src="danish.png" alt="Danish — boulangerie artisanale Reims" loading="lazy"><figcaption>Danish</figcaption></figure>
+<figure><img src="babka.png" alt="Babka — boulangerie artisanale Reims" loading="lazy"><figcaption>Babka</figcaption></figure>
+</div></div>
+<div class="cat"><h3>Pâtisseries</h3><div class="items">
+<figure><img src="eclair.jpg" alt="Éclair — boulangerie artisanale Reims" loading="lazy"><figcaption>Éclair</figcaption></figure>
+<figure><img src="sainthonore.png" alt="Saint-Honoré — boulangerie artisanale Reims" loading="lazy"><figcaption>Saint-Honoré</figcaption></figure>
+<figure><img src="tartfraise.png" alt="Tarte aux fraises — boulangerie artisanale Reims" loading="lazy"><figcaption>Tarte aux fraises</figcaption></figure>
+<figure><img src="tarterosa.png" alt="Tarte rose — boulangerie artisanale Reims" loading="lazy"><figcaption>Tarte rose</figcaption></figure>
+<figure><img src="tartemacchiatto.png" alt="Tarte macchiato — boulangerie artisanale Reims" loading="lazy"><figcaption>Tarte macchiato</figcaption></figure>
+<figure><img src="cookiep%C3%A9can.png" alt="Cookie pécan — boulangerie artisanale Reims" loading="lazy"><figcaption>Cookie pécan</figcaption></figure>
+<figure><img src="ctemedecitron.png" alt="Crème de citron — boulangerie artisanale Reims" loading="lazy"><figcaption>Crème de citron</figcaption></figure>
+<figure><img src="Passion%C3%A9-mangue.png" alt="Passion-mangue — boulangerie artisanale Reims" loading="lazy"><figcaption>Passion-mangue</figcaption></figure>
+</div></div>
+<div class="cat"><h3>Salé</h3><div class="items">
+<figure><img src="sandwich%20poulet-curry.png" alt="Sandwich poulet-curry — boulangerie artisanale Reims" loading="lazy"><figcaption>Sandwich poulet-curry</figcaption></figure>
+<figure><img src="viennoisethon.png" alt="Viennoise thon — boulangerie artisanale Reims" loading="lazy"><figcaption>Viennoise thon</figcaption></figure>
+</div></div>
+<p class="hand more">…et bien d'autres gourmandises à découvrir en boutique !</p>
+<div class="showvid"><video src="img-2346-1_G03Eb0LC.mp4" autoplay muted loop playsinline disablepictureinpicture disableremoteplayback preload="auto" aria-label="Paintagruélique, nos produits en vitrine"></video></div>
+</div></section>
+
+<section id="histoire"><div class="wrap two">
+<div class="own">
+<img class="o1" src="owners.png" alt="Thomas et Honorine, les propriétaires">
+<img class="o2" src="storepic.png" alt="La boulangerie Paintagruélique, devanture">
+</div>
+<div>
+<h2>Qui on est</h2>
+<p>On est Thomas et Honorine, un couple d'une trentaine d'années. On s'est rencontrés aux États-Unis, puis on a travaillé à Paris et à Melbourne, avant de revenir nous installer dans la ville où l'un de nous a grandi.</p>
+<p>Le nom, c'est un petit clin d'œil à Pantagruel et à son appétit sans limites. Avant de faire de la pâtisserie, l'un de nous a fait un bac littéraire, ça se sent un peu.</p>
+<p>Ce qui nous plaît : rester curieux, respecter les saisons, et tout faire nous-mêmes, avec passion.</p>
+<div class="hand sign">Thomas &amp; Honorine</div>
+</div>
+</div></section>
+
+<section class="pro" id="pro"><div class="wrap two">
+<div>
+<h2>Pour les pros et les événements</h2>
+<img class="pant" src="pantagruel.jpg" alt="Pantagruel" onerror="this.style.display='none'">
+</div>
+<div>
+<p>Une réunion à nourrir, un événement, un café ou un restaurant qui cherche du vrai pain ? Écrivez-nous, on regarde ensemble ce qui est possible :</p>
+<ul>
+<li>petits-déjeuners et pauses café</li>
+<li>plateaux sucrés ou salés</li>
+<li>commandes sur mesure</li>
+<li>pain pour les restaurants</li>
+</ul>
+<a class="btn" href="mailto:TUCORREO@dominio.com?subject=Demande%20pro%20-%20Paintagru%C3%A9lique">Nous écrire par e-mail</a>
+<a class="link" href="tel:+33326476881">ou par téléphone : 03 26 47 68 81</a>
+</div>
+</div></section>
+
+<section id="infos"><div class="wrap two">
+<div>
+<h2>Nous trouver</h2>
+<p><a class="link" href="https://www.google.com/maps/search/?api=1&query=Paintagru%C3%A9lique+30+Rue+de+Tambour+Reims" target="_blank" rel="noopener">30 rue de Tambour, 51100 Reims</a><br>Tél. : <a class="link" href="tel:+33326476881">03 26 47 68 81</a></p>
+<p><a class="link" href="https://www.google.com/maps/search/?api=1&query=Paintagru%C3%A9lique+30+Rue+de+Tambour+Reims" target="_blank" rel="noopener">Ouvrir l'itinéraire</a></p>
+<p>Notés 4,8 sur Google par plus de 310 personnes. <a class="link" href="https://share.google/rfpyEp99VkqnZgmtk" target="_blank" rel="noopener">Laisser un avis</a></p>
+<p>Un petit tour sur <a class="link" href="https://www.instagram.com/boulangeriepaintagruelique/" target="_blank" rel="noopener">Instagram</a> ou <a class="link" href="https://www.facebook.com/p/Paintagru%C3%A9lique-Boulangerie-%C3%A9picurienne-61552824359860/" target="_blank" rel="noopener">Facebook</a> ? Taguez-nous si vous partagez votre pâtisserie.</p>
+<iframe class="map" title="Plan : Paintagruélique, 30 rue de Tambour, Reims" src="https://www.google.com/maps?q=Paintagru%C3%A9lique%2C+30+Rue+de+Tambour%2C+51100+Reims&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+</div>
+<div>
+<h3 style="margin-bottom:8px;font-size:1.3rem">Horaires</h3>
+<table>
+<tr><td>Lundi</td><td>Fermé</td></tr>
+<tr><td>Mardi</td><td>Fermé</td></tr>
+<tr><td>Mercredi – Samedi</td><td>6h30 – 19h30</td></tr>
+<tr><td>Dimanche</td><td>6h30 – 13h30</td></tr>
+</table>
+</div>
+</div></section>
+</main>
+
+<div class="wrap"><p class="seo">Boulangerie artisanale et pâtisserie à Reims : pain au levain, pain de campagne, baguette, croissants, pains au chocolat, pains suisses, danish, babka, focaccia, tartes, éclairs, Saint-Honoré, sandwichs poulet-curry, douceurs sucrées et salées.</p></div>
+<footer>Paintagruélique · Boulangerie épicurienne · Reims</footer>
+
+<div class="bar">
+<a href="https://www.google.com/maps/search/?api=1&query=Paintagru%C3%A9lique+30+Rue+de+Tambour+Reims" target="_blank" rel="noopener">Itinéraire</a>
+<a href="https://www.instagram.com/boulangeriepaintagruelique/" target="_blank" rel="noopener">Instagram</a>
+</div>
+<script>
+(function(){
+var M={
+"Boulangerie artisanale et pâtisserie à Reims : pain au levain, pain de campagne, baguette, croissants, pains au chocolat, pains suisses, danish, babka, focaccia, tartes, éclairs, Saint-Honoré, sandwichs poulet-curry, douceurs sucrées et salées.":"Artisan bakery and pastry shop in Reims: sourdough bread, country bread, baguette, croissants, pains au chocolat, Danish pastries, babka, focaccia, tarts, éclairs, Saint-Honoré, chicken curry sandwiches, sweet and savoury treats.",
+"…et bien d'autres gourmandises à découvrir en boutique !":"…and many more treats to discover in store!",
+"Focaccia":"Focaccia","Pain baltique":"Baltic bread","Pain paysan":"Country bread","Cookie pécan":"Pecan cookie","Crème de citron":"Lemon cream","Passion-mangue":"Passion fruit & mango","Sandwich poulet-curry":"Chicken curry sandwich","Viennoise thon":"Tuna viennoise",
+"Pain":"Bread","Pain aux fruits":"Fruit bread","Farine":"Flour","Pain suisse":"Pain suisse","Danish":"Danish","Pâtisseries":"Pastries","Éclair":"Éclair","Tarte aux fraises":"Strawberry tart","Tarte rose":"Rose tart","Tarte macchiato":"Macchiato tart",
+"La carte":"Menu","Qui on est":"About us","Pros":"Business","Nous trouver":"Find us",
+"Reims · 30 rue de Tambour":"Reims · 30 rue de Tambour",
+"Ici, tout est fait maison.":"Everything here is homemade.",
+"Du pain au levain, des viennoiseries et des douceurs, au fil des saisons. On aime tester des associations de saveurs qu'on ne trouve pas partout, et on le fait avec envie.":"Sourdough bread, pastries and sweet treats, following the seasons. We love trying flavour combinations you won't find everywhere, and we do it with passion.",
+"Voir la carte":"See the menu",
+"photo à ajouter : la vitrine ou une fournée":"photo to add: the shop window or a fresh batch",
+"Elle change selon les saisons et les envies. Pour les nouveautés du moment, le plus simple est de passer nous voir, ou de jeter un œil à notre Instagram.":"It changes with the seasons and our cravings. For what's new right now, the easiest way is to drop by, or have a look at our Instagram.",
+"Pains":"Breads","Pain au levain":"Sourdough bread","Baguette":"Baguette","Pain de saison":"Seasonal bread",
+"Viennoiseries":"Viennoiseries","Croissant":"Croissant","Pain au chocolat":"Pain au chocolat","Cinnamon roll":"Cinnamon roll",
+"↑ notre petit chouchou de l'automne":"↑ our little autumn favourite",
+"Douceurs":"Sweet treats","Madeleine au citron":"Lemon madeleine","↑ difficile de n'en prendre qu'une":"↑ hard to have just one",
+"Tarte de saison":"Seasonal tart","Création du moment":"Creation of the moment",
+"Salé":"Savoury","Sandwich du jour":"Sandwich of the day","Quiche":"Quiche","Formule déjeuner":"Lunch set",
+"photo à ajouter : Thomas et Honorine":"photo to add: Thomas and Honorine",
+"On est Thomas et Honorine, un couple d'une trentaine d'années. On s'est rencontrés aux États-Unis, puis on a travaillé à Paris et à Melbourne, avant de revenir nous installer dans la ville où l'un de nous a grandi.":"We're Thomas and Honorine, a couple in our thirties. We met in the United States, then worked in Paris and Melbourne, before coming back to settle in the city where one of us grew up.",
+"Le nom, c'est un petit clin d'œil à Pantagruel et à son appétit sans limites. Avant de faire de la pâtisserie, l'un de nous a fait un bac littéraire, ça se sent un peu.":"The name is a little nod to Pantagruel and his boundless appetite. Before making pastry, one of us studied literature, and it shows a little.",
+"Ce qui nous plaît : rester curieux, respecter les saisons, et tout faire nous-mêmes, avec passion.":"What we like: staying curious, respecting the seasons, and doing everything ourselves, with passion.",
+"Pour les pros et les événements":"For businesses and events",
+"Une réunion à nourrir, un événement, un café ou un restaurant qui cherche du vrai pain ? Écrivez-nous, on regarde ensemble ce qui est possible :":"A meeting to feed, an event, a café or restaurant looking for real bread? Write to us and we'll look together at what's possible:",
+"petits-déjeuners et pauses café":"breakfasts and coffee breaks","plateaux sucrés ou salés":"sweet or savoury platters",
+"commandes sur mesure":"custom orders","pain pour les restaurants":"bread for restaurants",
+"Nous écrire par e-mail":"Email us","ou par téléphone : 03 26 47 68 81":"or by phone: 03 26 47 68 81",
+"Tél. :":"Tel.:","Ouvrir l'itinéraire":"Open directions",
+"Notés 4,8 sur Google par plus de 310 personnes.":"Rated 4.8 on Google by more than 310 people.",
+"Laisser un avis":"Leave a review","Un petit tour sur":"Take a look at","ou":"or",
+"? Taguez-nous si vous partagez votre pâtisserie.":"— tag us if you share your treat.",
+"Horaires":"Opening hours","Lundi":"Monday","Mardi":"Tuesday","Mercredi – Samedi":"Wednesday – Saturday","Dimanche":"Sunday","Fermé":"Closed",
+"Paintagruélique · Boulangerie épicurienne · Reims":"Paintagruélique · Epicurean bakery · Reims","Itinéraire":"Directions"
+};
+var nodes=[],w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,null),n;
+while(n=w.nextNode()){if(n.parentNode.tagName==="SCRIPT")continue;var t=n.nodeValue.trim();if(t&&M[t])nodes.push([n,n.nodeValue,t]);}
+var btn=document.getElementById("lang"),T={fr:document.title,en:"Paintagruélique — Artisan bakery & pastries in Reims"};
+function set(l){
+nodes.forEach(function(x){x[0].nodeValue=l==="en"?x[1].replace(x[2],M[x[2]]):x[1];});
+document.documentElement.lang=l;document.title=T[l];btn.textContent=l==="en"?"FR":"EN";
+try{localStorage.setItem("lang",l)}catch(e){}
+}
+var cur="fr";
+try{cur=localStorage.getItem("lang")||((navigator.language||"").slice(0,2)==="en"?"en":"fr")}catch(e){}
+btn.addEventListener("click",function(){cur=cur==="fr"?"en":"fr";set(cur)});
+if(cur==="en")set("en");
+})();
+</script>
+<script>
+document.querySelectorAll("video").forEach(function(v){
+v.muted=true;v.defaultMuted=true;v.loop=true;
+var go=function(){var p=v.play();if(p&&p.catch)p.catch(function(){})};
+go();v.addEventListener("loadeddata",go);v.addEventListener("canplay",go);
+["touchstart","click","scroll"].forEach(function(e){window.addEventListener(e,go,{once:true,passive:true})});
+});
+</script>
+</body>
+</html>
